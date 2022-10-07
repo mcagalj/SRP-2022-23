@@ -1,0 +1,47 @@
+version: "3.7"
+
+services:
+  # station prototype and victim station 1
+  station-1:
+    image: ${IMAGE_NAME}
+    build:
+      context: ./station
+      dockerfile: Dockerfile
+    container_name: ${VICTIM_NAME_1}
+    hostname: ${VICTIM_NAME_1}
+    networks:
+      - cns-lab
+    stdin_open: true
+    tty: true
+    command: bash
+
+  # victim station 2
+  station-2:
+    image: ${IMAGE_NAME}
+    container_name: ${VICTIM_NAME_2}
+    hostname: ${VICTIM_NAME_2}
+    networks:
+      - cns-lab
+    stdin_open: true
+    tty: true
+    command: bash
+    depends_on:
+      - station-1
+
+  # attacker station
+  evil-station:
+    image: ${IMAGE_NAME}
+    container_name: ${ATTACKER_NAME}
+    privileged: true
+    hostname: ${ATTACKER_NAME}
+    networks:
+      - cns-lab
+    stdin_open: true
+    tty: true
+    command: bash
+    depends_on:
+      - station-1
+
+networks:
+  cns-lab:
+    name: ${NETWORK_NAME}
