@@ -64,12 +64,13 @@ U nastavku su upute za pokretanje navedene mreže na lokalnom računalu.
 
 3. To mount a denial of service (**DoS**) attack after a successful man in the middle (MitM) attack we can simply instruct `evil-station` to stop forwarding packets as follows:
 
-   ```
+   ```console
    echo 0 > /proc/sys/net/ipv4/ip_forward
    ```
 
     To re-enable packet forwarding on `evil-station` run the following command:
-    ```
+
+    ```console
     echo 1 > /proc/sys/net/ipv4/ip_forward 
     ```
 
