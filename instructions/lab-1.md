@@ -17,7 +17,7 @@ U okviru vježbe upoznajemo se s osnovnim sigurnosnim prijetnjama i ranjivostima
 
 ### Zadatak
 
-Realizirati _man in the middle (MitM)_ napad iskorištavanjem ranjivosti ARP protokola. Student će testirati napad u virtualiziranoj [Docker](https://docs.docker.com/get-started/overview/) mreži ([Docker container networking](https://docs.docker.com/network/)) koju čine 3 virtualizirana Docker računala (eng. _container_): dvije _žrtve_ `station-1` i `station-2` te napadač `evil-station`.
+Realizirati _man in the middle (MitM)_ i _denial of service (DoS)_ napade iskorištavanjem ranjivosti ARP protokola. Student će testirati napad u virtualiziranoj [Docker](https://docs.docker.com/get-started/overview/) mreži ([Docker container networking](https://docs.docker.com/network/)) koju čine 3 virtualizirana Docker računala (eng. _container_): dvije _žrtve_ `station-1` i `station-2` te napadač `evil-station`.
 
 U nastavku su upute za pokretanje navedene mreže na lokalnom računalu.
 
@@ -52,17 +52,28 @@ U nastavku su upute za pokretanje navedene mreže na lokalnom računalu.
 1. Running bash scripts
 
     ```console
-    $ ./start.sh
-    $ ./stop.sh
+    ./start.sh
+    ./stop.sh
     ```
 
 2. Open an interactive shell (`bash`) in a container `station-1`
 
     ```console
-    $ docker exec -it station-1 bash
+    docker exec -it station-1 bash
     ```
 
-3. Tools to be used on the container
+3. To mount a denial of service (**DoS**) attack after a successful man in the middle (MitM) attack we can simply instruct `evil-station` to stop forwarding packets as follows:
+
+   ```
+   echo 0 > /proc/sys/net/ipv4/ip_forward
+   ```
+
+    To re-enable packet forwarding on `evil-station` run the following command:
+    ```
+    echo 1 > /proc/sys/net/ipv4/ip_forward 
+    ```
+
+4. Tools to be used on the container
 
     ```console
     $ whatis ping tcpdump arpspoof netcat
