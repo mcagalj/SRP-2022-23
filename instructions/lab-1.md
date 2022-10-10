@@ -28,13 +28,13 @@ U nastavku su upute za pokretanje navedene mreže na lokalnom računalu.
 3. U navedenom direktoriju klonirajte ovaj GitHub repozitorij:
 
    ```console
-    git clone https://github.com/mcagalj/SRP-2021-22
+    git clone https://github.com/mcagalj/SRP2022-23
    ```
 
 4. Uđite u direktorij `arp-spoofing/`:
 
     ```console
-    cd SRP-2021-22/arp-spoofing/
+    cd SRP-2022-23/arp-spoofing/
     ```
 
     U direktoriju se nalaze skripte `start.sh` i `stop.sh` koje možete pozvati za pokretanje/zaustavljanje virtualiziranog mrežnog scenarija. Ovdje se također nalaze `docker` i `docker-compose` konfiguracijske datoteke kojima su opisana Docker virtualna računala i odgovarajuća virtualna mreža. Za uvid u sadržaj navedenih skripti i konfiguracijskih datoteka možete izvršiti sljedeću naredbu u direktoriju `arp-spoofing/`:
