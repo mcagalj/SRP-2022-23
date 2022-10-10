@@ -28,7 +28,7 @@ U nastavku su upute za pokretanje navedene mreže na lokalnom računalu.
 3. U navedenom direktoriju klonirajte ovaj GitHub repozitorij:
 
    ```console
-    git clone https://github.com/mcagalj/SRP2022-23
+    git clone https://github.com/mcagalj/SRP-2022-23
    ```
 
 4. Uđite u direktorij `arp-spoofing/`:
