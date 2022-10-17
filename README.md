@@ -15,7 +15,7 @@ Ako nemate iskustva sa Git protokolom, aplikacija [GitHub Desktop](https://deskt
 ## Popis vježbi
 
 - [Lab 1: Man-in-the-middle attack (ARP spoofing)](instructions/lab-1.md)
-- Lab 2
+- [Lab 2: Python crash course](instructions/lab-2.md)
 - Lab 3
 - Lab 4
 - Lab 5
