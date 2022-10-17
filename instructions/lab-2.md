@@ -1,6 +1,20 @@
 # **Sigurnost računala i podataka** <!-- omit in toc -->
 
+- [Lab 2: Python crash course](#lab-2-python-crash-course)
+  - [Postavljanje razvojnog okruženja (VSCode Dev Containers)](#postavljanje-razvojnog-okruženja-vscode-dev-containers)
+  - [Ponovno pokretanje i zaustavljanje razvojnog Docker okruženja](#ponovno-pokretanje-i-zaustavljanje-razvojnog-docker-okruženja)
+  - [Python osnove](#python-osnove)
+    - [Hello, World](#hello-world)
+    - [Funkcije](#funkcije)
+  - [Python moduli](#python-moduli)
+    - [Kreiranje jednostavnog modula](#kreiranje-jednostavnog-modula)
+    - [_Optional:_ Moduli kao Python skripte](#optional-moduli-kao-python-skripte)
+  - [Python packages](#python-packages)
+    - [Package manager `pip`](#package-manager-pip)
+    - [The Requirements file](#the-requirements-file)
+
 ## Lab 2: Python crash course
+
 U okviru vježbe student će postaviti i testirati okruženje za pisanje i pokretanje Python skripti. Također će se upoznati s važnim konceptima Python jezika (relevantnim za laboratorijske vježbe) kao što su definicija funkcija, upravljanje modulima i paketima, rad sa stringovima i dr.
 
 ### Postavljanje razvojnog okruženja (VSCode Dev Containers)
