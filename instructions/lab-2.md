@@ -56,7 +56,7 @@ Kad dođete na sljedeći termin vježbi i želite ponovo otvoriti prethodno krei
 
     > Promjene koje ste ranije radili u ovom direktoriju trebale bi ostati sačuvane.
 
-3. Ako želite zaustaviti Docker kontejner, najbolja opcija je **Close Remote Connection** (crveni botun u donjem lijevom kutu).
+3. Ako želite zaustaviti Docker kontejner, najbolja opcija je **Close Remote Connection** (botun u donjem lijevom kutu).
 
 ### Python osnove
 
