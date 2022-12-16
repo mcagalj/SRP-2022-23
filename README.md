@@ -18,5 +18,5 @@ Ako nemate iskustva sa Git protokolom, aplikacija [GitHub Desktop](https://deskt
 - [Lab 2: Python crash course](instructions/lab-2.md)
 - [Lab 3: Symmetric key cryptography (a crypto challenge)](instructions/lab-3.md)
 - [Lab 4: Message authentication and integrity](instructions/lab-4.md)
-- Lab 5
+- [Lab 5: Password-hashing (iterative hashing, salt, memory-hard functions)](instructions/lab-5.md)
 - Lab 6
