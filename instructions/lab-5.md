@@ -202,7 +202,7 @@ if __name__ == "__main__":
 
 Implementirati proces inicijalne registracije i login korisnika korištenjem sigurne Argon2 _password hashing_ funkcije.
 
-> Zanimljivo je spomenuti da je dio koda u nastavku generiran pomoću modela strojnog učenja [ChatGPT](https://openai.com/blog/chatgpt/).
+> Zanimljivo je spomenuti da je dio koda u nastavku generiran pomoću modela strojnog učenja [OpenAI ChatGPT](https://openai.com/api/).
 
 #### Osnovica koda sustava autentikacije
 
