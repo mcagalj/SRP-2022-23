@@ -289,6 +289,23 @@ Odgovorite:
 
 #### Registracija novog korisnika
 
+Prije registriranja novog korisnika, provjerimo je li odabrano korisničko ime već zauzeto. Kako?
+
+```python
+def get_user(username):
+    try:
+        conn = sqlite3.connect("users.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+        user = cursor.fetchone()
+        conn.close()
+        return user
+    except Error:
+        return None
+```
+
+U nastavku je kod za registraciju korisnkika. Istražite ulogu modula `getpass`.
+
 ```python
 import getpass
 
