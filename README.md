@@ -19,4 +19,4 @@ Ako nemate iskustva sa Git protokolom, aplikacija [GitHub Desktop](https://deskt
 - [Lab 3: Symmetric key cryptography (a crypto challenge)](instructions/lab-3.md)
 - [Lab 4: Message authentication and integrity](instructions/lab-4.md)
 - [Lab 5: Password-hashing (iterative hashing, salt, memory-hard functions)](instructions/lab-5.md)
-- Lab 6
+- [Lab 6: Online and Offline Password Guessing](instructions/lab-6.md)
