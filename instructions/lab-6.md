@@ -58,7 +58,7 @@
     
     **Q3:** What do your do if the estimated time from the previous question is prohibitively large?
     
-7. Get the dictionary from [http://challenges.local](http://challenges.local:8080/) as follows (please mind the **group ID**).
+7. Get the dictionary from [http://challenges.local](http://challenges.local) as follows (please mind the **group ID**).
     
     ```bash
     # For GROUP 1 (g1)
