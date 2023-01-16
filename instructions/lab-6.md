@@ -68,8 +68,8 @@
 8. Finally, use `hydra` with the dictionary as shown below (IMPORTANT: use `dictionary_online.txt`).
     
     ```bash
-    # hydra -l <username> -P dictionary/<group ID>/dictionary_online.txt 10.0.15.1 -V -t 4 ssh
-    hydra -l doe_john -P dictionary/g1/dictionary_online.txt 10.0.15.1 -V -t 4 ssh
+    # hydra -l <username> -P dictionary/<group ID>/dictionary_online.txt <your IP address or hostname> -V -t 4 ssh
+    hydra -l doe_john -P dictionary/g1/dictionary_online.txt doejohn.local -V -t 4 ssh
     ```
     
 9. Try to login to your machine using the discovered password. Locate password hashes, select one account (different from your own) and try to learn the corresponding password using **offline password guessing** attack as outlined in the sequel.
